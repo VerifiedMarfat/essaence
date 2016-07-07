@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    $ADDITIONS
+\*------------------------------------*/
+$base-value: 16;
+
+
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+$tablet: 767px;
+$desktop: 1024px;
+$widescreen: 1600px;
+
+$speed: .5s;
+$radius: 10px;
+$easing: "fade";
+
+$header-height: 100px;
+
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+$base-font-size:    16px!default;
+$base-line-height:  24px!default;
+
+/*------------------------------------*\
+    $FRAMEWORK
+\*------------------------------------*/
+$base-spacing: 20px!default;
+$double-spacing: $base-spacing * 2!default;
+$half-spacing: $base-spacing / 2!default;
+$quarter-spacing: $half-spacing / 2!default;
+
+$line-height: $base-line-height / $base-font-size;
+
+/*------------------------------------*\
+    $COLOURS
+\*------------------------------------*/
+$black: #000000;
+$white: #FFFFFF;
+
+
+$primary-brand-color: #F83215;          // TODO :: add name
+$secondary-brand-color: #708CB1;        // TODO :: add name
+$tertiary-brand-color: #2E2F31;         // Shark
+$tertiary-brand-color-light: #3A3E47;   // TODO :: add name

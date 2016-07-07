@@ -1,0 +1,5 @@
+.smallprint {
+    @include fontsize(13px);
+    color: $tertiary-brand-color;
+    margin: 0;
+}

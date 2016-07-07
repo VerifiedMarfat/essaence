@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    $ADDITIONS
+\*------------------------------------*/
+$base-value: 16;
+
+
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+$tablet: 480px;
+$desktop: 767px;
+$widescreen: 1024px;
+
+$speed: .5s;
+$radius: 10px;
+$easing: "fade";
+
+$header-height: 90px;
+
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+$base-font-size:    16px!default;
+$base-line-height:  24px!default;
+
+/*------------------------------------*\
+    $FRAMEWORK
+\*------------------------------------*/
+$base-spacing: $base-line-height!default;
+$double-spacing: $base-spacing * 2!default;
+$half-spacing: $base-spacing / 2!default;
+$quarter-spacing: $half-spacing / 2!default;
+
+$line-height-ratio: $base-line-height / $base-font-size;
+
+/*------------------------------------*\
+    $COLOURS
+\*------------------------------------*/
+$black: #000000;
+$white: #FFFFFF;
+
+
+
+$primary-brand-color: #F83215;          // Name
+
+$secondary-brand-color: #708CB1;        // Name
+
+$tertiary-brand-color: #2E2F31;         // Shark
+$tertiary-brand-color-light: #3A3E47;   // Name
+
+

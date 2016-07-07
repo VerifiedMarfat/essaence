@@ -1,0 +1,51 @@
+body {
+    background-color: $tertiary-brand-color;
+}
+
+header,
+.header, {
+    background-color: $primary-brand-color;
+    color: $white;
+    height: $header-height;
+    padding: 0 10px;
+    position: absolute;
+    width: 100%;
+}
+
+footer,
+.footer {
+    background-color: transparent;
+    color: $white;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    padding: 0 10px;
+
+    @include tablet {
+        bottom: 0;
+    }
+}
+
+main {
+    padding: $header-height + 30 10px 50px;
+
+    @include tablet {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+article h1 {
+    background: $white;
+}
+
+p {
+    padding: $half-spacing $double-spacing $base-spacing;
+}
+
+.content {
+
+    p {
+        background-color: $white;
+    }
+}

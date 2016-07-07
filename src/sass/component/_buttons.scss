@@ -1,0 +1,17 @@
+.btn {
+    background-color: $secondary-brand-color;
+    color: $white;
+    cursor: pointer;
+    padding: 10px 20px;
+    underline: none;
+    transition: background-color $speed ease;
+
+    &:hover {
+        background-color: $tertiary-brand-color;
+    }
+
+    &.btn-excerpt {
+        display: block;
+        padding-bottom: 20px;
+    }
+}

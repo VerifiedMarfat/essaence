@@ -1,0 +1,19 @@
+.shave-bottom {
+    @include vendor(clip-path, polygon(0 0, 0 100%, 100% 60%, 100% 0));
+}
+
+.shave-top {
+
+    &:before {
+        @include vendor(clip-path, polygon(0 60%, 0 100%, 100% 100%, 100% 0));
+        background: $primary-brand-color;
+        bottom: 0;
+        content: "";
+        height: 100%;
+        padding-top: 35px;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        z-index: -10;
+    }
+}

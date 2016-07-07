@@ -1,0 +1,49 @@
+.exhale-top {
+    margin-top: $base-spacing;
+}
+
+.exhale-top-double {
+    margin-top: $double-spacing;
+}
+
+.inhale-reset {
+    padding: 0;
+}
+
+.inhale-ends-reset {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.inhale {
+    padding: $base-spacing;
+}
+
+.inhale-half {
+    padding: $half-spacing;
+}
+
+.inhale-top {
+    padding-top: $base-spacing;
+}
+
+.inhale-bottom {
+    padding-bottom: $base-spacing;
+}
+
+.inhale-left {
+    padding-left: $base-spacing;
+}
+
+.inhale-right {
+    padding-right: $base-spacing;
+}
+
+.inhale-top-double {
+    padding-top: $double-spacing;
+}
+
+.inhale-sides-double {
+    padding-left: $double-spacing;
+    padding-right: $double-spacing;
+}

@@ -1,0 +1,21 @@
+###########
+# Vagrant
+###########
+.vagrant
+html
+
+###########
+# Frontend
+###########
+.sass-cache
+node_modules
+essanece/wp-config.php
+essaence/wp-content/token/library/css
+essaence/wp-content/token/library/js
+essaence/wp-content/token/library/images
+essaence/wp-content/token/library/fonts
+
+###########
+# Other
+###########
+.DS_Store

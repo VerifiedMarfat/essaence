@@ -1,0 +1,32 @@
+{
+  "name": "essaence",
+  "version": "1.0.0",
+  "description": "The Essaence Token.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/verifiedtoken/essaence.git"
+  },
+  "keywords": [
+    "Essaence",
+    "VT",
+    "verified",
+    "token"
+  ],
+  "author": "VT",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/verifiedtoken/essaence#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-copy": "0.0.2",
+    "gulp-imageoptim": "^1.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.8"
+  }
+}
