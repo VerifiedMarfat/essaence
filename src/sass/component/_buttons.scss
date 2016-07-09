@@ -1,22 +1,25 @@
 .btn {
     @include font(exo);
     @include fontsize(15px);
-    background-color: $primary-brand-color;
+    background-color: $brand-color;
     color: $white;
     cursor: pointer;
     display: block;
-    padding: 20px 20px 35px;
+    // padding: $half-spacing $double-spacing $base-spacing;
+    padding: $base-spacing $base-spacing $double-spacing;
     underline: none;
     transition: background-color $speed ease;
 
     &:hover {
-
         background-color: $background-color;
         color: $white;
     }
 }
 
 .btn-excerpt {
-    @include shave(35px, 'bottom');
-    padding: 20px 20px 35px;
+    background: $background-color;
+
+    .btn {
+        @include shave(35px, 'bottom');
+    }
 }

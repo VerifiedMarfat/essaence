@@ -156,6 +156,7 @@ hr {
 */
 p {
   margin: 0;
+  padding: 0;
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
   -moz-hyphens: auto;
@@ -257,8 +258,7 @@ nav ol {
  * Remove border when inside `a` element in IE 8/9.
  */
 img {
-  border: 0;
-  width: 100%; }
+  border: 0; }
 
 /**
  * Correct overflow displayed oddly in IE 9.

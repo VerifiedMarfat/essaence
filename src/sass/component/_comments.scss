@@ -25,7 +25,7 @@
 
     h3 {
         @include fontsize(23px);
-        color: $primary-brand-color;
+        color: $brand-color;
         padding: 20px 10px 10px;
     }
 
@@ -34,7 +34,7 @@
     }
 
     #submit {
-        background-color: $primary-brand-color;
+        background-color: $brand-color;
         border-radius: 0;
         display: block;
         float: none;

@@ -1,8 +1,0 @@
-.shave-top {
-    @include shave(0, 'top', $background-color);
-    background: $background-color;
-    height: $base-spacing;
-    margin-top: 135px;
-    position: relative;
-}
-

@@ -4,14 +4,14 @@
         <?php if (have_posts()) : while (have_posts()) : the_post(); $count = 0; ?>
         <div class="column is-half">
             <article>
-                <h1 class="inhale-top inhale-sides-double">
+                <h1>
                     <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
                         <?php the_title(); ?>
                     </a>
                 </h1>
-                <p class="smallprint inhale-reset inhale-sides-double background-white">
+                <small class="inhale-sides">
                 <?php printf('<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'); ?>
-                </p>
+                </small>
                 <div class="content"><?php the_excerpt(); ?></div>
             </article>
         </div>
