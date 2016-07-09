@@ -1,9 +1,16 @@
+html {
+  height: 100%;
+}
+
 body {
     background-color: $tertiary-brand-color;
+    min-height: 100%;
+    position: relative;
 }
 
 header,
 .header, {
+
     background-color: $primary-brand-color;
     color: $white;
     height: $header-height;
@@ -15,24 +22,27 @@ header,
 footer,
 .footer {
     background-color: transparent;
+    bottom: 0;
     color: $white;
+    padding: 0 10px;
     position: absolute;
     text-align: right;
     width: 100%;
-    padding: 0 10px;
-
-    @include tablet {
-        bottom: 0;
-    }
+    z-index: 10;
 }
 
 main {
-    padding: $header-height + 30 10px 50px;
+    padding-bottom: $triple-spacing;
+    padding-top: $header-height + $base-spacing;
 
     @include tablet {
         padding-left: 20px;
         padding-right: 20px;
     }
+}
+
+article {
+    margin-bottom: $double-spacing;
 }
 
 article h1 {

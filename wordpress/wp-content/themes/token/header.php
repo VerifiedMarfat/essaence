@@ -42,7 +42,6 @@
 
     <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
-
         <header class="header shave-bottom" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
             <p class="inhale-reset inhale-top" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
