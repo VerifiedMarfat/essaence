@@ -21,14 +21,8 @@ header,
 footer,
 .footer {
     background-color: transparent;
-    border: 0;
-    bottom: 0;
     color: $white;
-    padding: 0 10px;
-    position: absolute;
     text-align: right;
-    width: 100%;
-    z-index: 10;
 }
 
 main {
@@ -42,16 +36,26 @@ main {
     @include desktop {
         margin-top: $parallax-height * 3;
     }
-}
 
-article {
-    margin-bottom: $double-spacing;
+    section {
 
-    h1 {
-        background: $white;
+        article {
+            position: relative;
+            margin-bottom: $double-spacing;
+
+            @include tablet {
+                &:nth-child(even) {
+                    transform: translateY(-6%);
+                }
+            }
+
+            h1 {
+                background: $white;
+            }
+        }
     }
-}
 
+}
 
 
 p {

@@ -2,17 +2,26 @@
     @include vendor(clip-path, polygon(0 0, 0 100%, 100% 75%, 100% 0));
 }
 
+.shave-bottom-half {
+    @include vendor(clip-path, polygon(0 0, 0 100%, 100% 50%, 100% 0));
+}
+
 .shave-top {
+    // background: transparent;
+    // position: absolute;
+    // height: 50px;
+    // transform: translateY(-100%);
+    // width: 100%;
+
     &:before {
-        @include vendor(clip-path, polygon(0 75%, 0 100%, 100% 100%, 100% 0));
-        background: $primary-brand-color;
-        bottom: 0;
+        @include vendor(clip-path, polygon(0 100%, 0 100%, 100% 100%, 100% 50%));
+        background: $white;
         content: "";
-        height: 100%;
-        padding-top: 35px;
+        height: 50px;
         position: absolute;
+        top: -50px;
         right: 0;
         width: 100%;
-        z-index: -10;
     }
 }
+
