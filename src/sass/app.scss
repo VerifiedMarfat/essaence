@@ -7,6 +7,7 @@
 @import "setting/normalise";
 @import "setting/elements";
 @import "setting/typography";
+@import "setting/overwrites";
 
 @import "component/backgrounds";
 @import "component/buttons";
@@ -14,4 +15,6 @@
 @import "component/grid";
 @import "component/shave";
 @import "component/spacings";
+@import "component/comments";
+@import "component/pagination";
 

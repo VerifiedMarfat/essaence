@@ -1,0 +1,43 @@
+.comment-respond {
+    padding: 0;
+    border: 0;
+
+    p {
+        color: $white;
+        padding: 0;
+        margin: 0;
+    }
+
+    h3,
+    label,
+    .comment-notes {
+        padding: 0 10px;
+    }
+
+    form {
+        margin-bottom: 15px;
+
+        input,
+        textarea {
+            border-radius: 0;
+        }
+    }
+
+    h3 {
+        @include fontsize(23px);
+        color: $primary-brand-color;
+        padding: 20px 10px 10px;
+    }
+
+    .comment-notes {
+        padding-bottom: 10px;
+    }
+
+    #submit {
+        background-color: $secondary-brand-color;
+        border-radius: 0;
+        display: block;
+        float: none;
+        margin-left: 10px;
+    }
+}
