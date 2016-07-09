@@ -42,30 +42,11 @@
 
     <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
-        <header class="header shave-bottom" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-
-            <p class="inhale-reset inhale-top" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-
-            <?php // if you'd like to use the site description you can un-comment it below ?>
-            <p class="inhale-reset"><?php bloginfo('description'); ?></p>
-
-
-            <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <?php wp_nav_menu(array(
-                         'container' => false,                           // remove nav container
-                         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-                         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-                         'menu_class' => 'nav top-nav cf',               // adding custom nav class
-                         'theme_location' => 'main-nav',                 // where it's located in the theme
-                         'before' => '',                                 // before the menu
-                           'after' => '',                                  // after the menu
-                           'link_before' => '',                            // before each link
-                           'link_after' => '',                             // after each link
-                           'depth' => 0,                                   // limit the depth of the nav
-                         'fallback_cb' => ''                             // fallback function (if there is one)
-                )); ?>
-
-            </nav>
-
+        <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+            <!-- TODO :: add logo here. -->
         </header>
-        <div class="parallax shave-bottom"></div>
+        <div class="parallax">
+            <img src="http://flashwallpapers.com/wp-content/uploads/2015/10/Autumn-River-Nature-1024x800.jpg" alt="">
+        </div>
+        <!-- FIXME :: rename me! -->
+        <div class="shave-top"></div>

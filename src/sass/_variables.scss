@@ -12,11 +12,10 @@ $desktop: 1024px;
 $widescreen: 1600px;
 
 $speed: .5s;
-$radius: 10px;
+$radius: 65px;
 $easing: "fade";
 
-$header-height: 135px;
-$parallax-height: 200px;
+$header-height: 100px;
 
 /*------------------------------------*\
     $BASE
@@ -41,7 +40,6 @@ $line-height: $base-line-height / $base-font-size;
 $black: #000000;
 $white: #FFFFFF;
 
-$primary-brand-color: #F83215;          // TODO :: add name
-$secondary-brand-color: #708CB1;        // TODO :: add name
-$tertiary-brand-color: #2E2F31;         // Shark
-$tertiary-brand-color-light: #3A3E47;   // TODO :: add name
+$primary-brand-color: #F83215;      // Pomegranate
+$secondary-brand-color: #708CB1;    // Malibu
+$background-color: #2E2F31;         // Shark

@@ -1,27 +1,8 @@
-.shave-bottom {
-    @include vendor(clip-path, polygon(0 0, 0 100%, 100% 75%, 100% 0));
-}
-
-.shave-bottom-half {
-    @include vendor(clip-path, polygon(0 0, 0 100%, 100% 50%, 100% 0));
-}
-
 .shave-top {
-    // background: transparent;
-    // position: absolute;
-    // height: 50px;
-    // transform: translateY(-100%);
-    // width: 100%;
-
-    &:before {
-        @include vendor(clip-path, polygon(0 100%, 0 100%, 100% 100%, 100% 50%));
-        background: $white;
-        content: "";
-        height: 50px;
-        position: absolute;
-        top: -50px;
-        right: 0;
-        width: 100%;
-    }
+    @include shave(0, 'top', $background-color);
+    background: $background-color;
+    height: $base-spacing;
+    margin-top: 135px;
+    position: relative;
 }
 

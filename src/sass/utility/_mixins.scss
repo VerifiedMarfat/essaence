@@ -15,44 +15,23 @@
     #{ $name }: #{ $argument };
 }
 
-@mixin from($device) {
-    @media screen and (min-width: $device) {
-        @content;
+@mixin shave($radius, $position, $color:false) {
+    @if ('bottom' == $position) {
+        @include vendor(clip-path, polygon(0 0, 0 100%, 100% $radius, 100% 0));
+    }
+
+    @if ('top' == $position) {
+        &:before {
+            @include vendor(clip-path, polygon(0 100%, 0 100%, 100% 100%, 100% $radius));
+            background: $color;
+            content: "";
+            height: 50px;
+            position: absolute;
+            top: -50px;
+            right: 0;
+            width: 100%;
+        }
     }
 }
 
-@mixin until($device) {
-    @media screen and (max-width: $device - 1px) {
-        @content;
-    }
-}
 
-@mixin mobile {
-    @media screen and (max-width: $tablet - 1px) {
-        @content;
-    }
-}
-
-@mixin tablet {
-    @media screen and (min-width: $tablet) {
-        @content;
-    }
-}
-
-@mixin portable {
-    @media screen and (max-width: $desktop - 1px) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media screen and (min-width: $desktop) {
-        @content;
-    }
-}
-
-@mixin widescreen {
-    @media screen and (min-width: $widescreen) {
-        @content;
-    }
-}

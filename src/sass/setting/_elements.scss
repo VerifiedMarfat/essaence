@@ -4,18 +4,19 @@ html {
 
 body {
     @include font(quicksand);
-    background-color: $tertiary-brand-color;
+    background-color: $background-color;
+    // color: $white;
     min-height: 100%;
     position: relative;
 }
 
 header,
 .header, {
-    // background-color: $primary-brand-color;
-    color: $white;
+    @include shave(55px, 'bottom');
     height: $header-height;
     padding: 0 10px;
     width: 100%;
+    // background-color: $primary-brand-color;
 }
 
 footer,
@@ -26,35 +27,32 @@ footer,
 }
 
 main {
-    background-color: $tertiary-brand-color;
-    margin-top: $parallax-height;
+    padding-top: $double-spacing;
+    background-color: $background-color;
+
+    // @include tablet {
+    //     margin-top: $parallax-height * 2;
+    // }
+
+    // @include desktop {
+    //     margin-top: $parallax-height * 3;
+    // }
+}
+
+article {
+    @include shave(0, 'top', $white);
+    position: relative;
+    margin-bottom: $double-spacing;
 
     @include tablet {
-        margin-top: $parallax-height * 2;
-    }
-
-    @include desktop {
-        margin-top: $parallax-height * 3;
-    }
-
-    section {
-
-        article {
-            position: relative;
-            margin-bottom: $double-spacing;
-
-            @include tablet {
-                &:nth-child(even) {
-                    transform: translateY(-6%);
-                }
-            }
-
-            h1 {
-                background: $white;
-            }
+        &:nth-child(even) {
+            transform: translateY(-6%);
         }
     }
 
+    h1 {
+        background: $white;
+    }
 }
 
 

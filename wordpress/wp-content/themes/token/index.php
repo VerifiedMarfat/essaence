@@ -2,21 +2,19 @@
 <main>
     <section class="columns">
         <?php if (have_posts()) : while (have_posts()) : the_post(); $count = 0; ?>
-        <article class="column is-half">
-                <div class="relative">
-                    <div class="shave-top">
-                        <h1 class="inhale-top inhale-sides-double">
-                            <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                <?php the_title(); ?>
-                            </a>
-                        </h1>
-                        <p class="smallprint inhale-reset inhale-sides-double background-white">
-                        <?php printf('<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'); ?>
-                        </p>
-                        <div class="content"><?php the_excerpt(); ?></div>
-                    </div>
-                </div>
-        </article>
+        <div class="column is-half">
+            <article>
+                <h1 class="inhale-top inhale-sides-double">
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                        <?php the_title(); ?>
+                    </a>
+                </h1>
+                <p class="smallprint inhale-reset inhale-sides-double background-white">
+                <?php printf('<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'); ?>
+                </p>
+                <div class="content"><?php the_excerpt(); ?></div>
+            </article>
+        </div>
         <?php endwhile; else : ?>
             <article id="post-not-found" class="hentry cf">
                     <header class="article-header">
