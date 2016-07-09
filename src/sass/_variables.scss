@@ -15,7 +15,8 @@ $speed: .5s;
 $radius: 10px;
 $easing: "fade";
 
-$header-height: 130px;
+$header-height: 135px;
+$parallax-height: 200px;
 
 /*------------------------------------*\
     $BASE
@@ -39,7 +40,6 @@ $line-height: $base-line-height / $base-font-size;
 \*------------------------------------*/
 $black: #000000;
 $white: #FFFFFF;
-
 
 $primary-brand-color: #F83215;          // TODO :: add name
 $secondary-brand-color: #708CB1;        // TODO :: add name

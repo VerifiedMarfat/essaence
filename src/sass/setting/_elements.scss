@@ -11,7 +11,7 @@ body {
 
 header,
 .header, {
-    background-color: $primary-brand-color;
+    // background-color: $primary-brand-color;
     color: $white;
     height: $header-height;
     padding: 0 10px;
@@ -32,10 +32,15 @@ footer,
 }
 
 main {
-    padding-top: $base-spacing;
+    background-color: $tertiary-brand-color;
+    margin-top: $parallax-height;
 
     @include tablet {
-        padding: $base-spacing;
+        margin-top: $parallax-height * 2;
+    }
+
+    @include desktop {
+        margin-top: $parallax-height * 3;
     }
 }
 

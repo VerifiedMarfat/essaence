@@ -68,4 +68,4 @@
             </nav>
 
         </header>
-        <div class="parallax"></div>
+        <div class="parallax shave-bottom"></div>

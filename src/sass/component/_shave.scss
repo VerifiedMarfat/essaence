@@ -1,10 +1,10 @@
 .shave-bottom {
-    @include vendor(clip-path, polygon(0 0, 0 100%, 100% 60%, 100% 0));
+    @include vendor(clip-path, polygon(0 0, 0 100%, 100% 75%, 100% 0));
 }
 
 .shave-top {
     &:before {
-        @include vendor(clip-path, polygon(0 60%, 0 100%, 100% 100%, 100% 0));
+        @include vendor(clip-path, polygon(0 75%, 0 100%, 100% 100%, 100% 0));
         background: $primary-brand-color;
         bottom: 0;
         content: "";
