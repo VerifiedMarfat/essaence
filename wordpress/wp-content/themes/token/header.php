@@ -68,3 +68,4 @@
             </nav>
 
         </header>
+        <div class="parallax"></div>

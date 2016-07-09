@@ -37,17 +37,18 @@ gulp.task('images', function() {
 });
 
 gulp.task('fonts', function() {
-    return gulp.src('./src/fonts/**/*')
-        .pipe($.copy('./wordpress/wp-content/themes/token/library/fonts'));
+   gulp.src('./src/fonts/**/*')
+    .pipe(gulp.dest('./wordpress/wp-content/themes/token/library/fonts'));
+
 });
 
 gulp.task('watch', function () {
     livereload.listen();
-    gulp.watch('./src/js/**/*', ['scripts']);
-    gulp.watch('./src/sass/**/*', ['styles']);
+    gulp.watch('./src/js/**/*.js', ['scripts']);
+    gulp.watch('./src/sass/**/*.scss', ['styles']);
     gulp.watch('./src/images/**/*', ['images']);
     gulp.watch('./src/fonts/**/*', ['fonts']);
 });
 
 
-gulp.task('default', ['styles', 'scripts']);
+gulp.task('default', ['styles', 'scripts', 'images', 'fonts', 'watch']);

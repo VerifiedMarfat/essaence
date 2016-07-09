@@ -1,5 +1,5 @@
 @mixin font($name) {
-    font-family: #{ $name }, "sans serif", "helvetica", "arial";
+    font-family: "#{ $name }", "sans serif", "helvetica", "arial";
 }
 
 @mixin fontsize($size) {

@@ -9,11 +9,12 @@ html
 ###########
 .sass-cache
 node_modules
-essanece/wp-config.php
-essaence/wp-content/token/library/css
-essaence/wp-content/token/library/js
-essaence/wp-content/token/library/images
-essaence/wp-content/token/library/fonts
+wordpress/wp-config.php
+wordpress/wp-content/themes/token/library/css
+wordpress/wp-content/themes/token/library/js
+wordpress/wp-content/themes/token/library/fonts
+wordpress/wp-content/uploads
+
 
 ###########
 # Other

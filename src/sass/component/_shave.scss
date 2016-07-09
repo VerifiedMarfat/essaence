@@ -3,7 +3,6 @@
 }
 
 .shave-top {
-
     &:before {
         @include vendor(clip-path, polygon(0 60%, 0 100%, 100% 100%, 100% 0));
         background: $primary-brand-color;

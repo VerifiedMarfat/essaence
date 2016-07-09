@@ -1,17 +1,20 @@
 .btn {
+    @include font(exo);
+    @include fontsize(17px);
     background-color: $secondary-brand-color;
     color: $white;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: $base-spacing $double-spacing;
     underline: none;
     transition: background-color $speed ease;
 
     &:hover {
         background-color: $tertiary-brand-color;
+        color: $white;
     }
 
     &.btn-excerpt {
         display: block;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 }

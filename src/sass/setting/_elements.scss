@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    @include font(quicksand);
     background-color: $tertiary-brand-color;
     min-height: 100%;
     position: relative;
@@ -10,12 +11,10 @@ body {
 
 header,
 .header, {
-
     background-color: $primary-brand-color;
     color: $white;
     height: $header-height;
     padding: 0 10px;
-    position: absolute;
     width: 100%;
 }
 
@@ -33,30 +32,25 @@ footer,
 }
 
 main {
-    padding-bottom: $triple-spacing;
-    padding-top: $header-height + $base-spacing;
+    padding-top: $base-spacing;
 
     @include tablet {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: $base-spacing;
     }
 }
 
 article {
     margin-bottom: $double-spacing;
+
+    h1 {
+        background: $white;
+    }
 }
 
-article h1 {
-    background: $white;
-}
+
 
 p {
     padding: $half-spacing $double-spacing $base-spacing;
 }
 
-.content {
 
-    p {
-        background-color: $white;
-    }
-}
