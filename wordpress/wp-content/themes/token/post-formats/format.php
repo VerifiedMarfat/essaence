@@ -1,5 +1,5 @@
 <div class="column">
-    <article class="column" role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <article class="columns" role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
         <h1 class="inhale" itemprop="headline" rel="bookmark"><?php the_title(); ?></h1>
         <small><?php printf('<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'); ?></small>
 
