@@ -24,12 +24,4 @@
             'link_after'  => '</span>',
         ]);
     ?>
-
-    <?php printf( __( '', 'bonestheme' ).': %1$s', get_the_category_list(', ') ); ?>
-
-    <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
-
-
 </article>
-
-

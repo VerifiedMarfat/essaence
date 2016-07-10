@@ -1,3 +1,4 @@
+%btn,
 .btn {
     @include font(exo);
     @include fontsize(15px);
@@ -5,7 +6,6 @@
     color: $white;
     cursor: pointer;
     display: block;
-    // padding: $half-spacing $double-spacing $base-spacing;
     padding: $base-spacing $base-spacing $double-spacing;
     transition: background-color $speed ease;
 

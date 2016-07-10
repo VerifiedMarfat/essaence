@@ -1,43 +1,27 @@
 .comment-respond {
-    padding: 0;
     border: 0;
+    color: $white;
+    padding: 0;
 
-    p {
-        color: $white;
-        padding: 0;
-        margin: 0;
+    #reply-title,
+    .comment-notes,
+    label {
+        margin: $half-spacing;
     }
 
-    h3,
-    label,
-    .comment-notes {
-        padding: 0 10px;
+    .comment-form-email {
+        margin: $base-spacing 0;
     }
 
-    form {
-        margin-bottom: 15px;
+    .form-submit {
+        background: $background-color;
 
-        input,
-        textarea {
-            border-radius: 0;
+        #submit {
+            @include shave(35px, 'bottom');
+            @extend %btn;
+            float: none;
+            text-align: left;
+            width: 100%;
         }
-    }
-
-    h3 {
-        @include fontsize(23px);
-        color: $brand-color;
-        padding: 20px 10px 10px;
-    }
-
-    .comment-notes {
-        padding-bottom: 10px;
-    }
-
-    #submit {
-        background-color: $brand-color;
-        border-radius: 0;
-        display: block;
-        float: none;
-        margin-left: 10px;
     }
 }

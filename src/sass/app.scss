@@ -3,6 +3,8 @@
 @import "utility/breakpoints";
 @import "utility/mixins";
 @import "utility/fonts";
+@import "utility/grid";
+
 
 @import "setting/reset";
 @import "setting/base";
@@ -11,10 +13,10 @@
 @import "setting/overwrites";
 
 @import "component/headings";
+@import "component/comments";
 @import "component/buttons";
 @import "component/colors";
 @import "component/content";
-@import "component/grid";
 @import "component/spacings";
 @import "component/comments";
 @import "component/parallax";

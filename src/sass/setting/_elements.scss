@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    @include font(quicksand);
+    @include font(sand);
     background-color: $background-color;
     min-height: 100%;
     position: relative;
@@ -19,7 +19,7 @@ header,
 
 footer,
 .footer {
-    background-color: transparent;
+    background: $background-color;
     color: $white;
     text-align: right;
 }

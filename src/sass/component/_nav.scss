@@ -1,17 +1,17 @@
 .nav-links {
-    margin: 20px 10px;
 
     .nav-previous,
     .nav-next {
         display: inline-block;
-        width: 50%;
+        width: 49%;
 
         a {
+            @include font(exo);
             background: $brand-color;
             color: $white;
             padding: $base-spacing;
             transition: background-color $speed ease;
-            width: 95%;
+            width: 100%;
 
             &:hover {
                 background-color: $background-color;
@@ -22,5 +22,6 @@
 
     .nav-next {
         text-align: right;
+        float: right;
     }
 }

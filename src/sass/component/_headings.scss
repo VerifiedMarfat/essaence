@@ -17,3 +17,8 @@ h2,
 .h2 {
     @include fontsize(30px);
 }
+
+h3,
+.h3 {
+    @include fontsize(26px);
+}
