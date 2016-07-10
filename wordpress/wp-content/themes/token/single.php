@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <main>
-    <section>
+    <section class="columns">
         <?php while ( have_posts() ) : the_post(); ?>
 
             <?php

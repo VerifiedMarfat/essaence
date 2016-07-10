@@ -59,7 +59,6 @@ hr {
     @include shave(0, 'top', $background-color);
     background: $background-color;
     border: 0;
-    height: $header-height / 2;
     margin: 0;
     margin-top: 150px;
     position: relative;
