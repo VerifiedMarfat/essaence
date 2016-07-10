@@ -16,6 +16,7 @@
 }
 
 @mixin shave($radius, $position, $color:false) {
+    position: relative;
     @if ('bottom' == $position) {
         @include vendor(clip-path, polygon(0 0, 0 100%, 100% $radius, 100% 0));
     }

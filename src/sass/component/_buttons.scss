@@ -16,9 +16,5 @@
 }
 
 .btn-excerpt {
-    background: $background-color;
-
-    .btn {
-        @include shave(35px, 'bottom');
-    }
+    @include shave(50%, 'bottom', $background-color);
 }

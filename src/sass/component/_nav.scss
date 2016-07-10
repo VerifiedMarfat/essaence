@@ -1,28 +1,27 @@
 .nav-links {
-    margin-bottom: $base-spacing;
+    margin-top: $base-spacing;
 
     .nav-previous,
     .nav-next {
+        // @include shave(90%, 'top', $brand-color);
+        // @include shave(20%, 'bottom', $brand-color);
         display: inline-block;
-        width: 49%;
+        margin-bottom: $base-spacing;
+        position: relative;
+        text-align: center;
+        width: 100%;
 
         a {
             @include font(exo);
             background: $brand-color;
             color: $white;
-            padding: $base-spacing;
+            padding: $double-spacing 0;
             transition: background-color $speed ease;
-            width: 100%;
 
             &:hover {
                 background-color: $background-color;
                 color: $white;
             }
         }
-    }
-
-    .nav-next {
-        text-align: right;
-        float: right;
     }
 }

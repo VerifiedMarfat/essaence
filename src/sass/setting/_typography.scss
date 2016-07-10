@@ -11,9 +11,7 @@ h6 {
     @include font(exo);
 }
 
-
 .smallprint {
     @include fontsize(13px);
     color: $background-color;
-    margin: 0;
 }

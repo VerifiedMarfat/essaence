@@ -1,0 +1,14 @@
+.single-post {
+    .container {
+        @include shave(95%, 'bottom', $background-color);
+        padding: $base-spacing 0 0;
+        margin-top: 100px;
+
+        article {
+            @include shave(0, 'top', $white);
+            background: $white;
+            padding-bottom: $double-spacing;
+        }
+
+    }
+}

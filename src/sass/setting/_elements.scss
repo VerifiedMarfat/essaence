@@ -10,11 +10,21 @@ body {
 }
 
 header {
-    @include shave(55px, 'bottom');
     background: $background-color;
-    // height: $header-height;
-    padding: $base-spacing $half-spacing;
+    padding: $half-spacing $half-spacing 0;
+    position: relative;
     width: 100%;
+
+    &:after {
+        @include shave(10%, 'bottom', $background-color);
+        background: $background-color;
+        content: "";
+        height: 50px;
+        position: absolute;
+        bottom: -49px;
+        left: 0;
+        width: 100%;
+    }
 }
 
 footer {
@@ -22,22 +32,28 @@ footer {
     border: 0;
     color: $white;
     text-align: right;
-    padding: 0 $base-spacing $base-spacing;
+    padding: $base-spacing;
+
 }
 
-main {
-    background-color: $background-color;
+section {
+    background: $background-color;
+
+    &.entry-content {
+        background: none;
+    }
 }
 
 article {
     @include shave(0, 'top', $white);
-    background: $white;
     position: relative;
     margin-top: $double-spacing;
+    text-align: justify;
 
-    p,
+    .content > p,
     h1,
-    small {
+    .smallprint {
+        background: $white;
         padding: $half-spacing $base-spacing;
     }
 
@@ -45,13 +61,15 @@ article {
         padding-top: $double-spacing;
     }
 
-    p {
+    .content > p {
         padding-bottom: $double-spacing;
     }
 
-    small {
+    .smallprint {
         padding-top: 0;
         padding-bottom: 0;
+        width: 100%;
+
     }
 }
 

@@ -22,9 +22,7 @@
         background: $background-color;
 
         #submit {
-            @include shave(35px, 'bottom');
             @extend %btn;
-            float: none;
             text-align: left;
             width: 100%;
         }

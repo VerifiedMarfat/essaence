@@ -9,10 +9,11 @@
                         <?php the_title(); ?>
                     </a>
                 </h1>
-                <small class="inhale-sides">
-                <?php printf('<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'); ?>
-                </small>
+                <p class="smallprint">
+                    <?php printf('<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'); ?>
+                </p>
                 <div class="content"><?php the_excerpt(); ?></div>
+                <a class="btn btn-excerpt" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
             </article>
         </div>
         <?php endwhile; else : ?>
