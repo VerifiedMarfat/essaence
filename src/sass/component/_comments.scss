@@ -9,6 +9,11 @@
         margin: $half-spacing;
     }
 
+    #reply-title,
+    label {
+        @include font(exo);
+    }
+
     .comment-form-email {
         margin: $base-spacing 0;
     }

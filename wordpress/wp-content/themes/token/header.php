@@ -42,8 +42,8 @@
 
     <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
-        <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-            <a href="/"><img src="http://placekitten.com/g/65/65" alt="Essaence" class="exhale-half"></a>
+        <header role="banner" itemscope itemtype="http://schema.org/WPHeader">
+            <a href="/"><img src="http://placekitten.com/g/65/65" alt="Essaence"></a>
         </header>
         <div class="parallax">
             <img src="http://flashwallpapers.com/wp-content/uploads/2015/10/Autumn-River-Nature-1024x800.jpg" alt="">

@@ -9,19 +9,20 @@ body {
     position: relative;
 }
 
-header,
-.header, {
+header {
     @include shave(55px, 'bottom');
-    height: $header-height;
-    padding: 0 10px;
+    background: $background-color;
+    // height: $header-height;
+    padding: $base-spacing $half-spacing;
     width: 100%;
 }
 
-footer,
-.footer {
+footer {
     background: $background-color;
+    border: 0;
     color: $white;
     text-align: right;
+    padding: 0 $base-spacing $base-spacing;
 }
 
 main {
@@ -34,13 +35,13 @@ article {
     position: relative;
     margin-top: $double-spacing;
 
-    h1 a,
     p,
+    h1,
     small {
         padding: $half-spacing $base-spacing;
     }
 
-    h1 a {
+    h1 {
         padding-top: $double-spacing;
     }
 
@@ -58,10 +59,14 @@ hr {
     @include shave(0, 'top', $background-color);
     background: $background-color;
     border: 0;
-    height: 50px;
+    height: $header-height / 2;
     margin: 0;
-    margin-top: 135px;
+    margin-top: 150px;
     position: relative;
+
+    @include tablet {
+        margin-top: 290px;
+    }
 }
 
 small {
