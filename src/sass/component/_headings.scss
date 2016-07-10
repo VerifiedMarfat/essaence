@@ -7,3 +7,13 @@ h6 {
     @include font(exo);
     color: $brand-color;
 }
+
+h1,
+.h1 {
+    @include fontsize(40px);
+}
+
+h2,
+.h2 {
+    @include fontsize(30px);
+}

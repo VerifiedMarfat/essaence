@@ -4,8 +4,8 @@
 @import "utility/mixins";
 @import "utility/fonts";
 
+@import "setting/reset";
 @import "setting/base";
-@import "setting/normalise";
 @import "setting/elements";
 @import "setting/typography";
 @import "setting/overwrites";
@@ -17,6 +17,6 @@
 @import "component/grid";
 @import "component/spacings";
 @import "component/comments";
-@import "component/pagination";
 @import "component/parallax";
 @import "component/positions";
+@import "component/nav";

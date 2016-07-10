@@ -34,23 +34,23 @@ article {
     position: relative;
     margin-top: $double-spacing;
 
-    h1,
+    h1 a,
     p,
     small {
-        padding: $double-spacing $base-spacing;
+        padding: $half-spacing $base-spacing;
     }
 
-    h1 {
-        padding-bottom: 0;
+    h1 a {
+        padding-top: $double-spacing;
     }
 
     p {
-        padding-top: 0;
+        padding-bottom: $double-spacing;
     }
 
     small {
-        padding-top: $base-spacing;
-        padding-bottom: $base-spacing;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -58,10 +58,12 @@ hr {
     @include shave(0, 'top', $background-color);
     background: $background-color;
     border: 0;
-    height: 20px;
+    height: 50px;
     margin: 0;
     margin-top: 135px;
     position: relative;
 }
 
-
+small {
+    @include fontsize(12px);
+}
